@@ -34,7 +34,7 @@ public class addingTwoNumbers extends Applet implements ActionListener {
           
 			b = Integer.parseInt(str);
           	
-			result = a + b;
+			result = a + b + 10;
           
 			str = String.valueOf(result);
 
@@ -49,14 +49,12 @@ public class addingTwoNumbers extends Applet implements ActionListener {
            	text1 = new TextField(10);
            
 		text2 = new TextField(10);
-
-		Border border = LineBorder.createGrayLineBorder();
            
 		add(text1);
            
 		add(text2);
            
-		text1.setText("10");
+		text1.setText("100");
 
 		text1.setBounds(1000,100,50,50);
            
@@ -74,14 +72,12 @@ public class addingTwoNumbers extends Applet implements ActionListener {
 	
 		label1 = new Label("Result will be shown here:");  
 
-		label1.setBorder(border);
-
 		add(label1);
      	}
 
-     	public void paint(Graphics g) {
+     	/*public void paint(Graphics g) {
           
-		g.drawString("Please click the button to compute the sum",0,100);
-     	}
+		//g.drawString("Please click the button to compute the sum",0,100);
+     	}*/
 }
 
