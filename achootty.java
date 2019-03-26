@@ -1,4 +1,4 @@
-class polymorphism {
+class poly {
 
 	void add (int a, int b) {
 
